@@ -26,7 +26,7 @@ Para la configuración de LliureX LTSP es **necesario** tener el servidor:
 
 #. Instalado correctamente
 #. Inicializado convenientemente
-#. Con una copia del repositorio o repositorios de paquetes
+#. Con una copia del repositorio o repositorios de paquetes (mediante LliureX Mirror)
 #. Actualizado (para incorporar las últimas correcciones y mejoras)
 
 Puede acceder a LliureX LTSP desde el menú de *Administración de LliureX*, seleccionando *Gestor de LliureX LTSP*.
@@ -159,3 +159,6 @@ Desde esta sección puede actualizar el repositorio de paquetes de LliureX en el
 
 .. image:: _static/llx-ltsp-mirror-update.png
    :width: 500px
+
+.. hint::
+  Si tiene un aula *mixta* (con clientes de 32 y 64 bits) recuerde marcar en *LliureX Mirror* la opción de ambos repositorios y poder disponer de los dos tipos de imágenes.
