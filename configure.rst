@@ -17,7 +17,6 @@ Así pues, en LliureX LTSP disponemos de varias operaciones que nos permitirán 
 * Instalación por red.
 
 .. note::
-
   Un *sabor* de LliureX es cualquiera de las diferentes opciones que tenemos para instalar: Escriptori, Infantil, Aula, etc. Empleamos dicho término para diferenciarlo de *versiones* de LliureX: 13.06 (Pandora), 12.06 (Nemo), 11.09 (Marty), etc.
 
 Requisitos previos
@@ -68,7 +67,7 @@ En la sección de *Gestión del aula* se pueden configurar los siguientes parám
 
   * Nombre y descripcion.
   * Tipo de cliente (semi-ligero, por defecto)
-  * Sesión (XFCE, por defecto)
+  * Sesión (Gnome Classic o Entorno Alternativo con XFCE)
   * Autologin (con un usuario y contraseña suministrados)
 
 .. image:: _static/llx-ltsp-classroom-mgmt-client.png
@@ -126,7 +125,11 @@ Para poder adaptar las imágenes a las necesidades concretas de cada aula se ofr
 
 Una vez hayamos acabado de realizar cambios, deberemos aplicar los cambios para que se regenere la *imagen*.
 
-.. important:: Si no realiza el paso de aplicar los cambios, se perderá toda la personalización que haya realizado en dicha sesión.
+.. important::
+  Los cambios realizados se aplican sobre el sistema *chroot* que tengamos en el correspondiente directorio, pero deberemos realizar el paso de aplicar los cambios para regenerar la imagen (*.img*) con la que trabajan los clientes. Si no aplicamos los cambios, aunque éstos radiquen en el directorio *chroot*, no serán visibles en los clientes.
+
+.. hint::
+  No es necesario aplicar los cambios a cada modificación que hagamos en el *chroot* hasta que deseemos que se apliquen. Por ejemplo, podemos actualizar el sistema con LliureX Up, y luego lanzar Synaptic e instalar nuevos paquetes. Cuando tengamos todos los cambios que deseemos, ya podemos regenerar el archivo *.img*.
 
 Instalación (por red) del aula
 ------------------------------
@@ -137,7 +140,6 @@ Esta opción es la que deberá escoger cuando necesite instalar (como clientes n
    :width: 500px
 
 .. note::
-
   Para poder arrancar un equipo cliente por red es necesario que tenga habilitada la opción en la BIOS (PXE). Esta opción ya viene activada en los clientes ligeros pero no necesariamente en los equipos más antiguos que queramos usar como clientes ligeros.
 
 En el equipo cliente se podrá observar el siguiente menú en el arranque:
