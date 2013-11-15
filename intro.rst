@@ -45,13 +45,19 @@ En el cliente:
 Conceptos básicos
 -----------------
 
-Los conceptos principales a tener en cuenta son dos:
+Los conceptos principales a tener en cuenta son:
 
 Directorio *chroot*
     Directorio con el contenido *completo* de un *sabor* de LliureX. Este directorio se construye a partir del repositorio de paquetes local del servidor. En él se pueden instalar/desinstalar aplicaciones, realizar actualizaciones, etc. A partir de los contenidos de este directorio se generará el archivo *imagen* correspondiente. Este es un proceso costoso y suele tardar alrededor de 2 horas. No obstante no es una operación a realizar con frecuencia puesto que, una vez generado, el mantenimiento este directorio es mucho más ligero (las operaciones de instalar/desinstalar y actualizar son más cortas).
 
 Archivo *imagen* (*.img*)
     Fichero *imagen* generado a partir de un directorio *chroot* concreto. Este fichero imagen será enviado por red al equipo cliente (tanto ligero como semi-ligero). El proceso de    generación suele tardar alrededor de unos 15 minutos.
+
+Cliente ligero
+    Como ya se ha explicado antes, se trata de un equipo de bajas prestaciones pero suficiente para poder mostrar la imagen de la sesión en el servidor en la pantalla. Tanto los procesos de cálculo como el almacenamiento en memoria se producen en el servidor. Es barato (fácil de reemplazar) y también reduce el tiempo de administración (todos los clientes ligeros tienen -o suelen tener por defecto- la misma imagen o configuración).
+
+Cliente semi-ligero (*fat-thinclient*)
+    Por contra, un cliente semiligero necesita un poco más de recursos dado que el procesamiento y la memoria son locales (pero sigue sin necesitar disco duro). Utiliza menos recursos del servidor (permitiendo más clientes para el mismo *hardware* si lo comparamos con los clientes ligeros normales).
 
 .. note::
 
