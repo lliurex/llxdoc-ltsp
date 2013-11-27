@@ -1,4 +1,4 @@
 Resolución de problemas
 =======================
 
-* Categorías desde el punto de vista del usuario
+.. todo:: Relacionar la lista de problemas más frecuentes y su solución

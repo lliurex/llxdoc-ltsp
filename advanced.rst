@@ -1,7 +1,5 @@
 Temas avanzados
 ===============
 
-* Resolución de problemas avanzados
-  - Arquitectura de LliureX LTSP
-  - Comandos de ltsp
-  - Errores más difíciles de solucionar
+.. todo::
+  Resolución de problemas avanzados: arquitectura de LliureX LTSP, comandos de ltsp, errores más difíciles de solucionar
