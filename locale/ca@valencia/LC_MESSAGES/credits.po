@@ -1,0 +1,111 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: LliureX LTSP 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-27 14:57\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../credits.rst:2
+msgid "Créditos y Licencia"
+msgstr ""
+
+#: ../../credits.rst:4
+msgid ""
+"La Guía de Usuario de LliureX LTSP ha sido desarrollada por el Equipo "
+"LliureX:"
+msgstr ""
+
+#: ../../credits.rst:6
+msgid "José Alfredo Múrcia"
+msgstr ""
+
+#: ../../credits.rst:7
+msgid "Ángel Berlanas"
+msgstr ""
+
+#: ../../credits.rst:8
+msgid "Héctor García"
+msgstr ""
+
+#: ../../credits.rst:9
+msgid "Raúl Rodrigo"
+msgstr ""
+
+#: ../../credits.rst:10
+msgid "David Montalvà"
+msgstr ""
+
+#: ../../credits.rst:11
+msgid "Javier Estellés"
+msgstr ""
+
+#: ../../credits.rst:12
+msgid "Vicent Balaguer"
+msgstr ""
+
+#: ../../credits.rst:13
+msgid "Juanjo Felis"
+msgstr ""
+
+#: ../../credits.rst:14
+msgid "Enrique Medina"
+msgstr ""
+
+#: ../../credits.rst:15
+msgid "Jaime Muñoz"
+msgstr ""
+
+#: ../../credits.rst:16
+msgid "Pilar Embid"
+msgstr ""
+
+#: ../../credits.rst:17
+msgid "Miguel García"
+msgstr ""
+
+#: ../../credits.rst:18
+msgid "Alfons Lloret"
+msgstr ""
+
+#: ../../credits.rst:19
+msgid "Raquel Torres"
+msgstr ""
+
+#: ../../credits.rst:20
+msgid "Salvador Aznar"
+msgstr ""
+
+#: ../../credits.rst:21
+msgid "José Carlos García"
+msgstr ""
+
+#: ../../credits.rst:23
+msgid ""
+"También han participado, con su guía de Epoptes, los Coordinadores TIC "
+"provinciales:"
+msgstr ""
+
+#: ../../credits.rst:25
+msgid "Sergio Cánovas"
+msgstr ""
+
+#: ../../credits.rst:26
+msgid "Román Carceller"
+msgstr ""
+
+#: ../../credits.rst:27
+msgid "Guillermo Vidal"
+msgstr ""
+
+#: ../../credits.rst:29
+msgid ""
+"Esta obra está bajo una `Licencia de Creative Commons Reconocimiento-"
+"NoComercial-CompartirIgual 3.0 Unported <http://creativecommons.org/licenses"
+"/by-nc-sa/3.0/deed.es_ES>`_."
+msgstr ""

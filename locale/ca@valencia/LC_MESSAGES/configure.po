@@ -1,0 +1,402 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: LliureX LTSP 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-27 14:57\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../configure.rst:2
+msgid "Configuración de LliureX LTSP"
+msgstr ""
+
+#: ../../configure.rst:5
+msgid "Conceptos básicos"
+msgstr ""
+
+#: ../../configure.rst:7
+msgid ""
+"Aunque en ocasiones se hable de imágenes tanto para el directorio *chroot* "
+"como para el archivo imagen (*.img*), debe quedar claro que el primero es la"
+" versión manipulable (sin comprimir) del segundo (comprimido). Por lo tanto,"
+" cada vez que queramos alterar la imagen de los clientes, habrá que actuar "
+"sobre el directorio *chroot* para luego generar el archivo imagen."
+msgstr ""
+
+#: ../../configure.rst:9
+msgid ""
+"Así pues, en LliureX LTSP disponemos de varias operaciones que nos "
+"permitirán gestionar las imágenes de los clientes ligeros y semi-ligeros:"
+msgstr ""
+
+#: ../../configure.rst:11
+msgid "Instalar un sabor de LliureX en un directorio *chroot*."
+msgstr ""
+
+#: ../../configure.rst:12
+msgid "Personalizar una imagen sin comprimir (*chroot*)."
+msgstr ""
+
+#: ../../configure.rst:13
+msgid "Exportar e importar directorios *chroot*."
+msgstr ""
+
+#: ../../configure.rst:14
+msgid "Borrar una imagen *chroot*."
+msgstr ""
+
+#: ../../configure.rst:15
+msgid "Configurar el aula (equipos cliente)."
+msgstr ""
+
+#: ../../configure.rst:16
+msgid "Actualizar el repositorio de paquetes."
+msgstr ""
+
+#: ../../configure.rst:17
+msgid "Instalación por red."
+msgstr ""
+
+#: ../../configure.rst:20
+msgid ""
+"Un *sabor* de LliureX es cualquiera de las diferentes opciones que tenemos "
+"para instalar: Escriptori, Infantil, Aula, etc. Empleamos dicho término para"
+" diferenciarlo de *versiones* de LliureX: 13.06 (Pandora), 12.06 (Nemo), "
+"11.09 (Marty), etc."
+msgstr ""
+
+#: ../../configure.rst:23
+msgid "Requisitos previos"
+msgstr ""
+
+#: ../../configure.rst:25
+msgid ""
+"Para la configuración de LliureX LTSP es **necesario** tener el servidor:"
+msgstr ""
+
+#: ../../configure.rst:27
+msgid "Instalado correctamente"
+msgstr ""
+
+#: ../../configure.rst:28
+msgid "Inicializado convenientemente"
+msgstr ""
+
+#: ../../configure.rst:29
+msgid ""
+"Con una copia del repositorio o repositorios de paquetes (mediante LliureX "
+"Mirror)"
+msgstr ""
+
+#: ../../configure.rst:30
+msgid "Actualizado (para incorporar las últimas correcciones y mejoras)"
+msgstr ""
+
+#: ../../configure.rst:32
+msgid ""
+"Puede acceder a LliureX LTSP desde el menú de *Administración de LliureX*, "
+"seleccionando *Gestor de LliureX LTSP*."
+msgstr ""
+
+#: ../../configure.rst:34
+msgid "La pantalla de entrada es la siguiente:"
+msgstr ""
+
+#: ../../configure.rst:39
+msgid ""
+"Deberá introducir un usuario y contraseña con permisos de administración. "
+"Una vez validado se le presentará la siguiente ventana:"
+msgstr ""
+
+#: ../../configure.rst:44
+msgid "Desde ella podrá realizar las siguientes operaciones:"
+msgstr ""
+
+#: ../../configure.rst:46
+msgid ""
+"Gestionar el aula (escogiendo las imágenes que arrancará cada cliente ligero"
+" o semiligero)"
+msgstr ""
+
+#: ../../configure.rst:47
+msgid "Gestionar las imágenes de los clientes ligeros y semiligeros"
+msgstr ""
+
+#: ../../configure.rst:48
+msgid "Instalar (por red) el aula"
+msgstr ""
+
+#: ../../configure.rst:49
+msgid "Actualizar la copia del repositorio (*mirror*)"
+msgstr ""
+
+#: ../../configure.rst:52
+msgid "Configuración de los clientes ligeros"
+msgstr ""
+
+#: ../../configure.rst:54
+msgid ""
+"En la sección de *Gestión del aula* se pueden configurar los siguientes "
+"parámetros:"
+msgstr ""
+
+#: ../../configure.rst:56
+msgid "Una sección para la configuración por defecto de toda el aula:"
+msgstr ""
+
+#: ../../configure.rst:58
+msgid "Escoger el tipo de cliente entre ligero y semi-ligero."
+msgstr ""
+
+#: ../../configure.rst:59
+msgid "Sesión a usar por defecto."
+msgstr ""
+
+#: ../../configure.rst:60
+msgid "Arranque por defecto."
+msgstr ""
+
+#: ../../configure.rst:61
+msgid "Tiempo de expiración."
+msgstr ""
+
+#: ../../configure.rst:66
+msgid ""
+"Otra sección para configurar clientes concretos, que permite configurar "
+"casos especiales (cuando tenemos un aula mixta con clientes ligeros y "
+"equipos normales, por ejemplo):"
+msgstr ""
+
+#: ../../configure.rst:68
+msgid "Nombre y descripcion."
+msgstr ""
+
+#: ../../configure.rst:69
+msgid "Tipo de cliente (semi-ligero, por defecto)"
+msgstr ""
+
+#: ../../configure.rst:70
+msgid "Sesión (Gnome Classic o Entorno Alternativo con XFCE)"
+msgstr ""
+
+#: ../../configure.rst:71
+msgid "Autologin (con un usuario y contraseña suministrados)"
+msgstr ""
+
+#: ../../configure.rst:76
+msgid ""
+"Para ir añadiendo clientes personalizados en la sección anterior hay que "
+"pulsar el botón de *Cliente nuevo*."
+msgstr ""
+
+#: ../../configure.rst:78
+msgid ""
+"Para que toda configuración nueva tenga efecto será necesario aplicar los "
+"cambios con el botón *Aplicar*."
+msgstr ""
+
+#: ../../configure.rst:81
+msgid "Gestión de las imágenes"
+msgstr ""
+
+#: ../../configure.rst:83
+msgid ""
+"LliureX LTSP permite la instalación, personalización, borrado, exportación e"
+" importación de imágenes de clientes ligeros."
+msgstr ""
+
+#: ../../configure.rst:88
+msgid "Veamos cada una de estas posibilidades con algo más de detalle."
+msgstr ""
+
+#: ../../configure.rst:91
+msgid "Instalación de imágenes"
+msgstr ""
+
+#: ../../configure.rst:93
+msgid ""
+"El proceso de instalación de imágenes consiste en la construcción, en un "
+"directorio *chroot*, de un sabor de LliureX (Escriptori, Infantil, Aula, "
+"etc.) completo. Esto nos va a permitir la modificación, actualización y "
+"preparación para la generación del archivo imagen (*.img*) que será cargado "
+"por los clientes definidos."
+msgstr ""
+
+#: ../../configure.rst:95
+msgid ""
+"Este proceso es laborioso y suele durar un mínimo de 2 horas. Sin embargo, "
+"esto sólo se debe realizar la primera vez. A partir de la creación de dicho "
+"directorio (con todos los paquetes necesarios) las modificaciones llevarán "
+"mucho menos tiempo."
+msgstr ""
+
+#: ../../configure.rst:97
+msgid ""
+"Para agilizar este proceso se ha creado la posibilidad de guardar en un "
+"archivo comprimido estándar (*.tar.gz*) el contenido del directorio *chroot*"
+" seleccionado. Este proceso es el que denominamos *exportación* de imagen. "
+"Igualmente se puede importar uno de estos archivos para que LliureX LTSP lo "
+"descomprima en un directorio *chroot*. Igualmente llamaríamos a esto "
+"*importación* de una imagen."
+msgstr ""
+
+#: ../../configure.rst:99
+msgid ""
+"Este procedimiento puede entenderse como una copia de seguridad y permite "
+"acortar el tiempo de instalación de imagen (pasamos de unas 2 horas a unos "
+"15 minutos). Para ello deberemos partir de una imagen creada previamente. "
+"Desde la web de LliureX se pueden descargar directorios *chroot* comprimidos"
+" para agilizar dicho proceso. Actualmente la dirección es: "
+"http://releases.lliurex.net/isos/13.06/ltsp/"
+msgstr ""
+
+#: ../../configure.rst:101
+msgid "Así pues, el procedimiento más rápido sería:"
+msgstr ""
+
+#: ../../configure.rst:103
+msgid ""
+"Descargarse una imagen de la anterior dirección web (o copiarla de un "
+"*pendrive*, disco externo, etc. donde ya tuviéramos la imagen descargada)"
+msgstr ""
+
+#: ../../configure.rst:104
+msgid "Importarla mediante la opción de importación"
+msgstr ""
+
+#: ../../configure.rst:105
+msgid ""
+"Personalizar la imagen (*chroot*) y aplicar los cambios (ver más adelante "
+"`Personalización de imágenes`_)"
+msgstr ""
+
+#: ../../configure.rst:107
+msgid ""
+"Cuando se importa una imagen, se deshabilita el botón de instalación (deja "
+"de ser necesario)."
+msgstr ""
+
+#: ../../configure.rst:110
+msgid "Personalización de imágenes"
+msgstr ""
+
+#: ../../configure.rst:112
+msgid ""
+"Para poder adaptar las imágenes a las necesidades concretas de cada aula se "
+"ofrece una herramienta (mediante el botón de *avanzado*) que permite "
+"actualizar, instalar, desinstalar y configurar cualquier aplicación como si "
+"fuera nuestra propia máquina. Como se puede apreciar en la captura de "
+"pantalla, disponemos de un escritorio virtual con iconos que dan paso a "
+"diferentes opciones:"
+msgstr ""
+
+#: ../../configure.rst:114
+msgid "Instalar paquetes con Synaptic"
+msgstr ""
+
+#: ../../configure.rst:115
+msgid "Actualizar la imagen con LliureX Up"
+msgstr ""
+
+#: ../../configure.rst:116
+msgid "Acceso a una terminal en el directorio *chroot*"
+msgstr ""
+
+#: ../../configure.rst:117
+msgid "Editar un fichero de texto"
+msgstr ""
+
+#: ../../configure.rst:118
+msgid "Ejecutar un comando"
+msgstr ""
+
+#: ../../configure.rst:119
+msgid "Abrir una sesión"
+msgstr ""
+
+#: ../../configure.rst:120
+msgid "Gestionar los usuarios"
+msgstr ""
+
+#: ../../configure.rst:121
+msgid "Instalar una versión ligera del escritorio"
+msgstr ""
+
+#: ../../configure.rst:126
+msgid ""
+"Una vez hayamos acabado de realizar cambios, deberemos aplicar los cambios "
+"para que se regenere la *imagen*."
+msgstr ""
+
+#: ../../configure.rst:129
+msgid ""
+"Los cambios realizados se aplican sobre el sistema *chroot* que tengamos en "
+"el correspondiente directorio, pero deberemos realizar el paso de aplicar "
+"los cambios para regenerar la imagen (*.img*) con la que trabajan los "
+"clientes. Si no aplicamos los cambios, aunque éstos radiquen en el "
+"directorio *chroot*, no serán visibles en los clientes."
+msgstr ""
+
+#: ../../configure.rst:132
+msgid ""
+"No es necesario aplicar los cambios a cada modificación que hagamos en el "
+"*chroot* hasta que deseemos que se apliquen. Por ejemplo, podemos actualizar"
+" el sistema con LliureX Up, y luego lanzar Synaptic e instalar nuevos "
+"paquetes. Cuando tengamos todos los cambios que deseemos, ya podemos "
+"regenerar el archivo *.img*."
+msgstr ""
+
+#: ../../configure.rst:135
+msgid "Instalación (por red) del aula"
+msgstr ""
+
+#: ../../configure.rst:137
+msgid ""
+"Esta opción es la que deberá escoger cuando necesite instalar (como clientes"
+" normales) parte o toda el aula. Como puede comprobar en la captura de "
+"pantalla, se trata de *habilitar* la instalación por red y aplicar los "
+"cambios. A partir de ese momento podrá instalar desde el arranque por red "
+"(PXE) de los equipos cliente."
+msgstr ""
+
+#: ../../configure.rst:143
+msgid ""
+"Para poder arrancar un equipo cliente por red es necesario que tenga "
+"habilitada la opción en la BIOS (PXE). Esta opción ya viene activada en los "
+"clientes ligeros pero no necesariamente en los equipos más antiguos que "
+"queramos usar como clientes ligeros."
+msgstr ""
+
+#: ../../configure.rst:145
+msgid ""
+"En el equipo cliente se podrá observar el siguiente menú en el arranque:"
+msgstr ""
+
+#: ../../configure.rst:150
+msgid ""
+"Escoja la opción de instalar y aparecerá un nuevo menú con las posibles "
+"imágenes a instalar:"
+msgstr ""
+
+#: ../../configure.rst:156
+msgid "Mantenimiento del repositorio"
+msgstr ""
+
+#: ../../configure.rst:158
+msgid ""
+"Desde esta sección puede actualizar el repositorio de paquetes de LliureX en"
+" el servidor del Aula. Insistimos en que la correcta actualización del "
+"repositorio es **fundamental** para el funcionamiento de LliureX LTSP."
+msgstr ""
+
+#: ../../configure.rst:164
+msgid ""
+"Si tiene un aula *mixta* (con clientes de 32 y 64 bits) recuerde marcar en "
+"*LliureX Mirror* la opción de ambos repositorios y poder disponer de los dos"
+" tipos de imágenes."
+msgstr ""

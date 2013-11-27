@@ -1,0 +1,264 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: LliureX LTSP 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-27 14:57\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../manage.rst:2
+msgid "Gestión del aula con LliureX LTSP"
+msgstr ""
+
+#: ../../manage.rst:4
+msgid ""
+"A partir de LliureX Pandora 13.06, la gestión del aula se realiza con "
+"*Epoptes* (en versiones anteriores se empleaba *TCOSMonitor*). Esta "
+"aplicación permite realizar una serie acciones a uno o varios equipos "
+"cliente seleccionados, a saber:"
+msgstr ""
+
+#: ../../manage.rst:6
+msgid "Compartir (mostrar) la pantalla."
+msgstr ""
+
+#: ../../manage.rst:7
+msgid "Ejecutar aplicaciones."
+msgstr ""
+
+#: ../../manage.rst:8
+msgid "Envío de mensajes."
+msgstr ""
+
+#: ../../manage.rst:9
+msgid "Bloquear y desbloquear pantallas."
+msgstr ""
+
+#: ../../manage.rst:10
+msgid "Iniciar, reiniciar o apagar."
+msgstr ""
+
+#: ../../manage.rst:12
+msgid ""
+"Epoptes se accede desde el menú: Aplicaciones > Administración de Lliurex > "
+"Epoptes, control de aula. Puede seleccionar el conjunto de equipos a "
+"controlar desde la interfaz de Epoptes."
+msgstr ""
+
+#: ../../manage.rst:15
+msgid "Compartir la pantalla"
+msgstr ""
+
+#: ../../manage.rst:17
+msgid ""
+"Si no dispone de proyector en el aula o simplemente quiere mostrar cómo se "
+"realiza alguna tarea en varios equipos a la vez, puede emplear esta opción."
+msgstr ""
+
+#: ../../manage.rst:23
+msgid "Ejecutar aplicaciones"
+msgstr ""
+
+#: ../../manage.rst:25
+msgid ""
+"Si necesita lanzar una aplicación en los equipos seleccionados puede hacerlo"
+" mediante la opción resaltada en la imagen."
+msgstr ""
+
+#: ../../manage.rst:31
+msgid "Envío de mensajes"
+msgstr ""
+
+#: ../../manage.rst:33
+msgid ""
+"Igualmente, desde el mismo menú anterior o bien desde la barra de "
+"herramientas, puede enviar mensajes a los equipos seleccionados."
+msgstr ""
+
+#: ../../manage.rst:39
+msgid "Bloquear y desbloquear pantallas"
+msgstr ""
+
+#: ../../manage.rst:41
+msgid "De la misma manera puede bloquear (y desbloquear) equipos."
+msgstr ""
+
+#: ../../manage.rst:47
+msgid "Iniciar, reiniciar o apagar"
+msgstr ""
+
+#: ../../manage.rst:49
+msgid ""
+"Como utilidad adicional, puede iniciar (encender), reiniciar o apagar los "
+"equipos seleccionados."
+msgstr ""
+
+#: ../../manage.rst:54
+msgid ""
+"Es posible que lleguemos con el tiempo justo al aula, y no queramos perder "
+"el tiempo esperando que los alumnos arranquen los equipos, el Epoptes, nos "
+"va a permitir arrancar todos los equipos del aula a la vez, pero para ello "
+"nuestra aula debe cumplir unos requisitos:"
+msgstr ""
+
+#: ../../manage.rst:56
+msgid ""
+"Que los equipos soporten la opción de `Wake On LAN`_ (Encendido por red)"
+msgstr ""
+
+#: ../../manage.rst:57
+msgid ""
+"Que la red se encuentre correctamente cableada por medio de un *switch*"
+msgstr ""
+
+#: ../../manage.rst:58
+msgid ""
+"Haber realizado el `Registro de equipos`_ del aula en un grupo de Epoptes"
+msgstr ""
+
+#: ../../manage.rst:60
+msgid ""
+"Una vez se cumplan estos requisitos, vamos a poder arrancar todos los "
+"equipos del aula a la vez, con lo cual no tenderemos que ir uno a uno o "
+"esperar a que los alumnos los arranquen, desde el servidor los encenderemos "
+"todos."
+msgstr ""
+
+#: ../../manage.rst:62
+msgid ""
+"Tanto para evitar que se quede encendido algún equipo (una vez finalizadas "
+"las clases) como para reiniciar algún equipo concreto, podemos mirar con "
+"Epoptes los clientes que se detectan:"
+msgstr ""
+
+#: ../../manage.rst:67
+msgid ""
+"De esta manera podemos proceder a apagarlos o reiniciarlos mediante la "
+"correspondiente opción del menú."
+msgstr ""
+
+#: ../../manage.rst:70
+msgid "Registro de equipos"
+msgstr ""
+
+#: ../../manage.rst:72
+msgid ""
+"Aunque Epoptes puede realizar un registro de equipos propio, es recomendable"
+" hacerlo primero desde LliureX LTSP. De esta manera tendremos como resultado"
+" toda el aula registrada, para cualquier aplicación (no sólo Epoptes). Este "
+"proceso de registro asocia un ordenador concreto con un nombre definido por "
+"nosotros. De esta manera podemos tener identificado desde el ordenador del "
+"profesor a cualquier equipo de un alumno (por ejemplo mediante un sistema de"
+" coordenadas: *a1_34* para el aula 1, tercera fila, cuarto ordenador desde "
+"la ventana)."
+msgstr ""
+
+#: ../../manage.rst:74
+msgid "El proceso a seguir es el siguiente:"
+msgstr ""
+
+#: ../../manage.rst:76
+msgid ""
+"En el equipo cliente debe lanzar la aplicación *LliureX LTSP Info* y le "
+"aparecerá la siguiente ventana:"
+msgstr ""
+
+#: ../../manage.rst:82
+msgid ""
+"Pulsar en el botón *Enviar la MAC al servidor*. Con esta operación envía al "
+"servidor LTSP la información necesaria para poder registrar el equipo."
+msgstr ""
+
+#: ../../manage.rst:84
+msgid ""
+"Por último, en el Gestor de LliureX LTSP, pulsamos el botón de *Cliente "
+"nuevo* e importamos la información enviada, tal y como se muestra en la "
+"imagen:"
+msgstr ""
+
+#: ../../manage.rst:91
+msgid "Creación de un grupo en Epoptes"
+msgstr ""
+
+#: ../../manage.rst:93
+msgid ""
+"Para poder realizar acciones a todo un grupo de ordenadores (como por "
+"ejemplo el apagado del aula), es necesario crear un grupo en Epoptes e "
+"incluir los equipos correspondientes. Será necesario realizar los siguientes"
+" pasos:"
+msgstr ""
+
+#: ../../manage.rst:95
+msgid ""
+"Es necesario tener la **sesión iniciada** en todos los ordenadores (*no "
+"deben estar en la pantalla de login*)."
+msgstr ""
+
+#: ../../manage.rst:96
+msgid ""
+"Desde la ventana de Epoptes, esperaremos a que vaya analizando la red y "
+"aparezcan todos los equipos."
+msgstr ""
+
+#: ../../manage.rst:97
+msgid ""
+"A continuación creamos un grupo nuevo (pulsando en el símbolo *+* verde en "
+"la esquina inferior izquierda)."
+msgstr ""
+
+#: ../../manage.rst:98
+msgid ""
+"Ahora iremos arrastrando -uno a uno- los clientes detectados al nuevo grupo."
+msgstr ""
+
+#: ../../manage.rst:100
+msgid ""
+"Cuando, por ejemplo, deseemos apagar los equipos podremos realizar esta "
+"opción desde el menú (a todo el grupo) y aparecerán con el siguiente icono:"
+msgstr ""
+
+#: ../../manage.rst:106
+msgid "Wake On LAN"
+msgstr ""
+
+#: ../../manage.rst:108
+msgid ""
+"El soporte de *Encendido por Red* viene implementado en el ordenador. Los "
+"equipos portátiles más modernos con *wifi* también suelen soportarlo, aunque"
+" en estos casos se llama *Wake on Wireless LAN*. El único requerimiento para"
+" que funcione es que esté activado en la configuración de la BIOS de cada "
+"ordenador del aula."
+msgstr ""
+
+#: ../../manage.rst:110
+msgid "Para ver si la BIOS esta correctamente configurada, haga lo siguiente:"
+msgstr ""
+
+#: ../../manage.rst:112
+msgid ""
+"Reinicie el equipo y entre a la BIOS presionando la tecla necesaria según "
+"corresponda (ESC, DEL, F2, F5, F11, F12)"
+msgstr ""
+
+#: ../../manage.rst:113
+msgid ""
+"Una vez dentro de la BIOS, deberemos entrar a las opciones de alimentación "
+"(POWER) y activar la opción *Wake on LAN* o similar"
+msgstr ""
+
+#: ../../manage.rst:115
+msgid "Recuerde guardar los cambios en la BIOS antes de salir."
+msgstr ""
+
+#: ../../manage.rst:121
+msgid "Ejemplo 1"
+msgstr ""
+
+#: ../../manage.rst:127
+msgid "Ejemplo 2"
+msgstr ""
