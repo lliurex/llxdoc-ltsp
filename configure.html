@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Configuración de LliureX LTSP &mdash; Guía de Usuario de LliureX LTSP v 0.1</title>
+    
+    <link rel="stylesheet" href="_static/solar.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="Guía de Usuario de LliureX LTSP v 0.1" href="index.html" />
+    <link rel="next" title="Gestión del aula con LliureX LTSP" href="manage.html" />
+    <link rel="prev" title="Introducción a LliureX LTSP" href="intro.html" /><link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+<link href="_static/solarized-dark.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="manage.html" title="Gestión del aula con LliureX LTSP"
+             accesskey="N">siguiente</a></li>
+        <li class="right" >
+          <a href="intro.html" title="Introducción a LliureX LTSP"
+             accesskey="P">anterior</a> |</li>
+        <li><a href="index.html">Guía Usuario LliureX LTSP</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/lliurex.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Tabla de Contenidos</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Configuración de LliureX LTSP</a><ul>
+<li><a class="reference internal" href="#conceptos-basicos">Conceptos básicos</a></li>
+<li><a class="reference internal" href="#requisitos-previos">Requisitos previos</a></li>
+<li><a class="reference internal" href="#configuracion-de-los-clientes-ligeros">Configuración de los clientes ligeros</a></li>
+<li><a class="reference internal" href="#gestion-de-las-imagenes">Gestión de las imágenes</a></li>
+<li><a class="reference internal" href="#instalacion-de-imagenes">Instalación de imágenes</a></li>
+<li><a class="reference internal" href="#personalizacion-de-imagenes">Personalización de imágenes</a></li>
+<li><a class="reference internal" href="#instalacion-por-red-del-aula">Instalación (por red) del aula</a></li>
+<li><a class="reference internal" href="#mantenimiento-del-repositorio">Mantenimiento del repositorio</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Tema anterior</h4>
+  <p class="topless"><a href="intro.html"
+                        title="capítulo anterior">Introducción a LliureX LTSP</a></p>
+  <h4>Próximo tema</h4>
+  <p class="topless"><a href="manage.html"
+                        title="próximo capítulo">Gestión del aula con LliureX LTSP</a></p>
+  <h3>Esta página</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/configure.txt"
+           rel="nofollow">Mostrar el código</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Búsqueda rápida</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Introduzca los términos de búsqueda o un nombre de módulo, clase o función.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="configuracion-de-lliurex-ltsp">
+<h1>Configuración de LliureX LTSP<a class="headerlink" href="#configuracion-de-lliurex-ltsp" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="conceptos-basicos">
+<h2>Conceptos básicos<a class="headerlink" href="#conceptos-basicos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Aunque en ocasiones se hable de imágenes tanto para el directorio <em>chroot</em> como para el archivo imagen (<em>.img</em>), debe quedar claro que el primero es la versión manipulable (sin comprimir) del segundo (comprimido). Por lo tanto, cada vez que queramos alterar la imagen de los clientes, habrá que actuar sobre el directorio <em>chroot</em> para luego generar el archivo imagen.</p>
+<p>Así pues, en LliureX LTSP disponemos de varias operaciones que nos permitirán gestionar las imágenes de los clientes ligeros y semi-ligeros:</p>
+<ul class="simple">
+<li>Instalar un sabor de LliureX en un directorio <em>chroot</em>.</li>
+<li>Personalizar una imagen sin comprimir (<em>chroot</em>).</li>
+<li>Exportar e importar directorios <em>chroot</em>.</li>
+<li>Borrar una imagen <em>chroot</em>.</li>
+<li>Configurar el aula (equipos cliente).</li>
+<li>Actualizar el repositorio de paquetes.</li>
+<li>Instalación por red.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Un <em>sabor</em> de LliureX es cualquiera de las diferentes opciones que tenemos para instalar: Escriptori, Infantil, Aula, etc. Empleamos dicho término para diferenciarlo de <em>versiones</em> de LliureX: 13.06 (Pandora), 12.06 (Nemo), 11.09 (Marty), etc.</p>
+</div>
+</div>
+<div class="section" id="requisitos-previos">
+<h2>Requisitos previos<a class="headerlink" href="#requisitos-previos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para la configuración de LliureX LTSP es <strong>necesario</strong> tener el servidor:</p>
+<ol class="arabic simple">
+<li>Instalado correctamente</li>
+<li>Inicializado convenientemente</li>
+<li>Con una copia del repositorio o repositorios de paquetes (mediante LliureX Mirror)</li>
+<li>Actualizado (para incorporar las últimas correcciones y mejoras)</li>
+</ol>
+<p>Puede acceder a LliureX LTSP desde el menú de <em>Administración de LliureX</em>, seleccionando <em>Gestor de LliureX LTSP</em>.</p>
+<p>La pantalla de entrada es la siguiente:</p>
+<a class="reference internal image-reference" href="_images/llx-ltsp-login.png"><img alt="_images/llx-ltsp-login.png" src="_images/llx-ltsp-login.png" style="width: 500px;" /></a>
+<p>Deberá introducir un usuario y contraseña con permisos de administración. Una vez validado se le presentará la siguiente ventana:</p>
+<a class="reference internal image-reference" href="_images/llx-ltsp-welcome.png"><img alt="_images/llx-ltsp-welcome.png" src="_images/llx-ltsp-welcome.png" style="width: 500px;" /></a>
+<p>Desde ella podrá realizar las siguientes operaciones:</p>
+<ul class="simple">
+<li>Gestionar el aula (escogiendo las imágenes que arrancará cada cliente ligero o semiligero)</li>
+<li>Gestionar las imágenes de los clientes ligeros y semiligeros</li>
+<li>Instalar (por red) el aula</li>
+<li>Actualizar la copia del repositorio (<em>mirror</em>)</li>
+</ul>
+</div>
+<div class="section" id="configuracion-de-los-clientes-ligeros">
+<h2>Configuración de los clientes ligeros<a class="headerlink" href="#configuracion-de-los-clientes-ligeros" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>En la sección de <em>Gestión del aula</em> se pueden configurar los siguientes parámetros:</p>
+<ul class="simple">
+<li>Una sección para la configuración por defecto de toda el aula:<ul>
+<li>Escoger el tipo de cliente entre ligero y semi-ligero.</li>
+<li>Sesión a usar por defecto.</li>
+<li>Arranque por defecto.</li>
+<li>Tiempo de expiración.</li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="_images/llx-ltsp-classroom-mgmt.png"><img alt="_images/llx-ltsp-classroom-mgmt.png" src="_images/llx-ltsp-classroom-mgmt.png" style="width: 500px;" /></a>
+<ul class="simple">
+<li>Otra sección para configurar clientes concretos, que permite configurar casos especiales (cuando tenemos un aula mixta con clientes ligeros y equipos normales, por ejemplo):<ul>
+<li>Nombre y descripcion.</li>
+<li>Tipo de cliente (semi-ligero, por defecto)</li>
+<li>Sesión (Gnome Classic o Entorno Alternativo con XFCE)</li>
+<li>Autologin (con un usuario y contraseña suministrados)</li>
+</ul>
+</li>
+</ul>
+<a class="reference internal image-reference" href="_images/llx-ltsp-classroom-mgmt-client.png"><img alt="_images/llx-ltsp-classroom-mgmt-client.png" src="_images/llx-ltsp-classroom-mgmt-client.png" style="width: 500px;" /></a>
+<ul class="simple">
+<li>Para ir añadiendo clientes personalizados en la sección anterior hay que pulsar el botón de <em>Cliente nuevo</em>.</li>
+</ul>
+<div class="admonition important">
+<p class="first admonition-title">Importante</p>
+<p class="last">Para que toda configuración nueva tenga efecto será necesario aplicar los cambios con el botón <em>Aplicar</em>.</p>
+</div>
+</div>
+<div class="section" id="gestion-de-las-imagenes">
+<h2>Gestión de las imágenes<a class="headerlink" href="#gestion-de-las-imagenes" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>LliureX LTSP permite la instalación, personalización, borrado, exportación e importación de imágenes de clientes ligeros.</p>
+<a class="reference internal image-reference" href="_images/llx-ltsp-images-mgmt.png"><img alt="_images/llx-ltsp-images-mgmt.png" src="_images/llx-ltsp-images-mgmt.png" style="width: 500px;" /></a>
+<p>Veamos cada una de estas posibilidades con algo más de detalle.</p>
+</div>
+<div class="section" id="instalacion-de-imagenes">
+<h2>Instalación de imágenes<a class="headerlink" href="#instalacion-de-imagenes" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El proceso de instalación de imágenes consiste en la construcción, en un directorio <em>chroot</em>, de un sabor de LliureX (Escriptori, Infantil, Aula, etc.) completo. Esto nos va a permitir la modificación, actualización y preparación para la generación del archivo imagen (<em>.img</em>) que será cargado por los clientes definidos.</p>
+<p>Este proceso es laborioso y suele durar un mínimo de 2 horas. Sin embargo, esto sólo se debe realizar la primera vez. A partir de la creación de dicho directorio (con todos los paquetes necesarios) las modificaciones llevarán mucho menos tiempo.</p>
+<p>Para agilizar este proceso se ha creado la posibilidad de guardar en un archivo comprimido estándar (<em>.tar.gz</em>) el contenido del directorio <em>chroot</em> seleccionado. Este proceso es el que denominamos <em>exportación</em> de imagen. Igualmente se puede importar uno de estos archivos para que LliureX LTSP lo descomprima en un directorio <em>chroot</em>. Igualmente llamaríamos a esto <em>importación</em> de una imagen.</p>
+<p>Este procedimiento puede entenderse como una copia de seguridad y permite acortar el tiempo de instalación de imagen (pasamos de unas 2 horas a unos 15 minutos). Para ello deberemos partir de una imagen creada previamente. Desde la web de LliureX se pueden descargar directorios <em>chroot</em> comprimidos para agilizar dicho proceso. Actualmente la dirección es: <a class="reference external" href="http://releases.lliurex.net/isos/13.06/ltsp/">http://releases.lliurex.net/isos/13.06/ltsp/</a></p>
+<p>Así pues, el procedimiento más rápido sería:</p>
+<ul class="simple">
+<li>Descargarse una imagen de la anterior dirección web (o copiarla de un <em>pendrive</em>, disco externo, etc. donde ya tuviéramos la imagen descargada)</li>
+<li>Importarla mediante la opción de importación</li>
+<li>Personalizar la imagen (<em>chroot</em>) y aplicar los cambios (ver más adelante <a class="reference internal" href="#personalizacion-de-imagenes">Personalización de imágenes</a>)</li>
+</ul>
+<p>Cuando se importa una imagen, se deshabilita el botón de instalación (deja de ser necesario).</p>
+</div>
+<div class="section" id="personalizacion-de-imagenes">
+<h2>Personalización de imágenes<a class="headerlink" href="#personalizacion-de-imagenes" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para poder adaptar las imágenes a las necesidades concretas de cada aula se ofrece una herramienta (mediante el botón de <em>avanzado</em>) que permite actualizar, instalar, desinstalar y configurar cualquier aplicación como si fuera nuestra propia máquina. Como se puede apreciar en la captura de pantalla, disponemos de un escritorio virtual con iconos que dan paso a diferentes opciones:</p>
+<ul class="simple">
+<li>Instalar paquetes con Synaptic</li>
+<li>Actualizar la imagen con LliureX Up</li>
+<li>Acceso a una terminal en el directorio <em>chroot</em></li>
+<li>Editar un fichero de texto</li>
+<li>Ejecutar un comando</li>
+<li>Abrir una sesión</li>
+<li>Gestionar los usuarios</li>
+<li>Instalar una versión ligera del escritorio</li>
+</ul>
+<a class="reference internal image-reference" href="_images/llx-ltsp-images-mgmt-customize.png"><img alt="_images/llx-ltsp-images-mgmt-customize.png" src="_images/llx-ltsp-images-mgmt-customize.png" style="width: 500px;" /></a>
+<p>Una vez hayamos acabado de realizar cambios, deberemos aplicar los cambios para que se regenere la <em>imagen</em>.</p>
+<div class="admonition important">
+<p class="first admonition-title">Importante</p>
+<p class="last">Los cambios realizados se aplican sobre el sistema <em>chroot</em> que tengamos en el correspondiente directorio, pero deberemos realizar el paso de aplicar los cambios para regenerar la imagen (<em>.img</em>) con la que trabajan los clientes. Si no aplicamos los cambios, aunque éstos radiquen en el directorio <em>chroot</em>, no serán visibles en los clientes.</p>
+</div>
+<div class="admonition hint">
+<p class="first admonition-title">Consejo</p>
+<p class="last">No es necesario aplicar los cambios a cada modificación que hagamos en el <em>chroot</em> hasta que deseemos que se apliquen. Por ejemplo, podemos actualizar el sistema con LliureX Up, y luego lanzar Synaptic e instalar nuevos paquetes. Cuando tengamos todos los cambios que deseemos, ya podemos regenerar el archivo <em>.img</em>.</p>
+</div>
+</div>
+<div class="section" id="instalacion-por-red-del-aula">
+<h2>Instalación (por red) del aula<a class="headerlink" href="#instalacion-por-red-del-aula" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Esta opción es la que deberá escoger cuando necesite instalar (como clientes normales) parte o toda el aula. Como puede comprobar en la captura de pantalla, se trata de <em>habilitar</em> la instalación por red y aplicar los cambios. A partir de ese momento podrá instalar desde el arranque por red (PXE) de los equipos cliente.</p>
+<a class="reference internal image-reference" href="_images/llx-ltsp-netinstall-enable.png"><img alt="_images/llx-ltsp-netinstall-enable.png" src="_images/llx-ltsp-netinstall-enable.png" style="width: 500px;" /></a>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Para poder arrancar un equipo cliente por red es necesario que tenga habilitada la opción en la BIOS (PXE). Esta opción ya viene activada en los clientes ligeros pero no necesariamente en los equipos más antiguos que queramos usar como clientes ligeros.</p>
+</div>
+<p>En el equipo cliente se podrá observar el siguiente menú en el arranque:</p>
+<a class="reference internal image-reference" href="_images/llx-ltsp-netinstall-PXE.png"><img alt="_images/llx-ltsp-netinstall-PXE.png" src="_images/llx-ltsp-netinstall-PXE.png" style="width: 500px;" /></a>
+<p>Escoja la opción de instalar y aparecerá un nuevo menú con las posibles imágenes a instalar:</p>
+<a class="reference internal image-reference" href="_images/llx-ltsp-netinstall-PXE2.png"><img alt="_images/llx-ltsp-netinstall-PXE2.png" src="_images/llx-ltsp-netinstall-PXE2.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="mantenimiento-del-repositorio">
+<h2>Mantenimiento del repositorio<a class="headerlink" href="#mantenimiento-del-repositorio" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Desde esta sección puede actualizar el repositorio de paquetes de LliureX en el servidor del Aula. Insistimos en que la correcta actualización del repositorio es <strong>fundamental</strong> para el funcionamiento de LliureX LTSP.</p>
+<a class="reference internal image-reference" href="_images/llx-ltsp-mirror-update.png"><img alt="_images/llx-ltsp-mirror-update.png" src="_images/llx-ltsp-mirror-update.png" style="width: 500px;" /></a>
+<div class="admonition hint">
+<p class="first admonition-title">Consejo</p>
+<p class="last">Si tiene un aula <em>mixta</em> (con clientes de 32 y 64 bits) recuerde marcar en <em>LliureX Mirror</em> la opción de ambos repositorios y poder disponer de los dos tipos de imágenes.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="manage.html" title="Gestión del aula con LliureX LTSP"
+             >siguiente</a></li>
+        <li class="right" >
+          <a href="intro.html" title="Introducción a LliureX LTSP"
+             >anterior</a> |</li>
+        <li><a href="index.html">Guía Usuario LliureX LTSP</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es_ES">Licencia CC BY-NC-SA 3.0</a> 2013, Equipo LliureX.
+      Actualizado por última vez en 2013-12-12.
+    Creado con <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2. Tema por <a href="http://github.com/vkvn">vkvn</a>
+    </div>
+  </body>
+</html>

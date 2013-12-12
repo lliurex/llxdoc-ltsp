@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Gestión del aula con LliureX LTSP &mdash; Guía de Usuario de LliureX LTSP v 0.1</title>
+    
+    <link rel="stylesheet" href="_static/solar.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="Guía de Usuario de LliureX LTSP v 0.1" href="index.html" />
+    <link rel="next" title="Resolución de problemas" href="troubleshoot.html" />
+    <link rel="prev" title="Configuración de LliureX LTSP" href="configure.html" /><link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+<link href="_static/solarized-dark.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="troubleshoot.html" title="Resolución de problemas"
+             accesskey="N">siguiente</a></li>
+        <li class="right" >
+          <a href="configure.html" title="Configuración de LliureX LTSP"
+             accesskey="P">anterior</a> |</li>
+        <li><a href="index.html">Guía Usuario LliureX LTSP</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/lliurex.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Tabla de Contenidos</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Gestión del aula con LliureX LTSP</a><ul>
+<li><a class="reference internal" href="#compartir-la-pantalla">Compartir la pantalla</a></li>
+<li><a class="reference internal" href="#ejecutar-aplicaciones">Ejecutar aplicaciones</a></li>
+<li><a class="reference internal" href="#envio-de-mensajes">Envío de mensajes</a></li>
+<li><a class="reference internal" href="#bloquear-y-desbloquear-pantallas">Bloquear y desbloquear pantallas</a></li>
+<li><a class="reference internal" href="#iniciar-reiniciar-o-apagar">Iniciar, reiniciar o apagar</a></li>
+<li><a class="reference internal" href="#registro-de-equipos">Registro de equipos</a></li>
+<li><a class="reference internal" href="#creacion-de-un-grupo-en-epoptes">Creación de un grupo en Epoptes</a></li>
+<li><a class="reference internal" href="#wake-on-lan">Wake On LAN</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Tema anterior</h4>
+  <p class="topless"><a href="configure.html"
+                        title="capítulo anterior">Configuración de LliureX LTSP</a></p>
+  <h4>Próximo tema</h4>
+  <p class="topless"><a href="troubleshoot.html"
+                        title="próximo capítulo">Resolución de problemas</a></p>
+  <h3>Esta página</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/manage.txt"
+           rel="nofollow">Mostrar el código</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Búsqueda rápida</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Introduzca los términos de búsqueda o un nombre de módulo, clase o función.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="gestion-del-aula-con-lliurex-ltsp">
+<h1>Gestión del aula con LliureX LTSP<a class="headerlink" href="#gestion-del-aula-con-lliurex-ltsp" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>A partir de LliureX Pandora 13.06, la gestión del aula se realiza con <em>Epoptes</em> (en versiones anteriores se empleaba <em>TCOSMonitor</em>). Esta aplicación permite realizar una serie acciones a uno o varios equipos cliente seleccionados, a saber:</p>
+<ul class="simple">
+<li>Compartir (mostrar) la pantalla.</li>
+<li>Ejecutar aplicaciones.</li>
+<li>Envío de mensajes.</li>
+<li>Bloquear y desbloquear pantallas.</li>
+<li>Iniciar, reiniciar o apagar.</li>
+</ul>
+<p>Epoptes se accede desde el menú: Aplicaciones &gt; Administración de Lliurex &gt; Epoptes, control de aula. Puede seleccionar el conjunto de equipos a controlar desde la interfaz de Epoptes.</p>
+<div class="section" id="compartir-la-pantalla">
+<h2>Compartir la pantalla<a class="headerlink" href="#compartir-la-pantalla" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Si no dispone de proyector en el aula o simplemente quiere mostrar cómo se realiza alguna tarea en varios equipos a la vez, puede emplear esta opción.</p>
+<img alt="_images/epoptes-show.png" class="align-center" src="_images/epoptes-show.png" />
+</div>
+<div class="section" id="ejecutar-aplicaciones">
+<h2>Ejecutar aplicaciones<a class="headerlink" href="#ejecutar-aplicaciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Si necesita lanzar una aplicación en los equipos seleccionados puede hacerlo mediante la opción resaltada en la imagen.</p>
+<img alt="_images/epoptes-run.png" class="align-center" src="_images/epoptes-run.png" />
+</div>
+<div class="section" id="envio-de-mensajes">
+<h2>Envío de mensajes<a class="headerlink" href="#envio-de-mensajes" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Igualmente, desde el mismo menú anterior o bien desde la barra de herramientas, puede enviar mensajes a los equipos seleccionados.</p>
+<img alt="_images/epoptes-msg.png" class="align-center" src="_images/epoptes-msg.png" />
+</div>
+<div class="section" id="bloquear-y-desbloquear-pantallas">
+<h2>Bloquear y desbloquear pantallas<a class="headerlink" href="#bloquear-y-desbloquear-pantallas" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>De la misma manera puede bloquear (y desbloquear) equipos.</p>
+<img alt="_images/epoptes-block.png" class="align-center" src="_images/epoptes-block.png" />
+</div>
+<div class="section" id="iniciar-reiniciar-o-apagar">
+<h2>Iniciar, reiniciar o apagar<a class="headerlink" href="#iniciar-reiniciar-o-apagar" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Como utilidad adicional, puede iniciar (encender), reiniciar o apagar los equipos seleccionados.</p>
+<img alt="_images/epoptes-session.png" class="align-center" src="_images/epoptes-session.png" />
+<p>Es posible que lleguemos con el tiempo justo al aula, y no queramos perder el tiempo esperando que los alumnos arranquen los equipos, el Epoptes, nos va a permitir arrancar todos los equipos del aula a la vez, pero para ello nuestra aula debe cumplir unos requisitos:</p>
+<ul class="simple">
+<li>Que los equipos soporten la opción de <a class="reference internal" href="#wake-on-lan">Wake On LAN</a> (Encendido por red)</li>
+<li>Que la red se encuentre correctamente cableada por medio de un <em>switch</em></li>
+<li>Haber realizado el <a class="reference internal" href="#registro-de-equipos">Registro de equipos</a> del aula en un grupo de Epoptes</li>
+</ul>
+<p>Una vez se cumplan estos requisitos, vamos a poder arrancar todos los equipos del aula a la vez, con lo cual no tenderemos que ir uno a uno o esperar a que los alumnos los arranquen, desde el servidor los encenderemos todos.</p>
+<p>Tanto para evitar que se quede encendido algún equipo (una vez finalizadas las clases) como para reiniciar algún equipo concreto, podemos mirar con Epoptes los clientes que se detectan:</p>
+<img alt="_images/epoptes-detect.png" class="align-center" src="_images/epoptes-detect.png" />
+<p>De esta manera podemos proceder a apagarlos o reiniciarlos mediante la correspondiente opción del menú.</p>
+</div>
+<div class="section" id="registro-de-equipos">
+<h2>Registro de equipos<a class="headerlink" href="#registro-de-equipos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Aunque Epoptes puede realizar un registro de equipos propio, es recomendable hacerlo primero desde LliureX LTSP. De esta manera tendremos como resultado toda el aula registrada, para cualquier aplicación (no sólo Epoptes). Este proceso de registro asocia un ordenador concreto con un nombre definido por nosotros. De esta manera podemos tener identificado desde el ordenador del profesor a cualquier equipo de un alumno (por ejemplo mediante un sistema de coordenadas: <em>a1_34</em> para el aula 1, tercera fila, cuarto ordenador desde la ventana).</p>
+<p>El proceso a seguir es el siguiente:</p>
+<ol class="arabic simple">
+<li>En el equipo cliente debe lanzar la aplicación <em>LliureX LTSP Info</em> y le aparecerá la siguiente ventana:</li>
+</ol>
+<a class="reference internal image-reference" href="_images/llx-ltsp-register.png"><img alt="_images/llx-ltsp-register.png" class="align-center" src="_images/llx-ltsp-register.png" style="height: 600px;" /></a>
+<ol class="arabic simple" start="2">
+<li>Pulsar en el botón <em>Enviar la MAC al servidor</em>. Con esta operación envía al servidor LTSP la información necesaria para poder registrar el equipo.</li>
+<li>Por último, en el Gestor de LliureX LTSP, pulsamos el botón de <em>Cliente nuevo</em> e importamos la información enviada, tal y como se muestra en la imagen:</li>
+</ol>
+<a class="reference internal image-reference" href="_images/llx-ltsp-classroom-mgmt-new-client.png"><img alt="_images/llx-ltsp-classroom-mgmt-new-client.png" class="align-center" src="_images/llx-ltsp-classroom-mgmt-new-client.png" style="width: 500px;" /></a>
+</div>
+<div class="section" id="creacion-de-un-grupo-en-epoptes">
+<h2>Creación de un grupo en Epoptes<a class="headerlink" href="#creacion-de-un-grupo-en-epoptes" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Para poder realizar acciones a todo un grupo de ordenadores (como por ejemplo el apagado del aula), es necesario crear un grupo en Epoptes e incluir los equipos correspondientes. Será necesario realizar los siguientes pasos:</p>
+<ul class="simple">
+<li>Es necesario tener la <strong>sesión iniciada</strong> en todos los ordenadores (<em>no deben estar en la pantalla de login</em>).</li>
+<li>Desde la ventana de Epoptes, esperaremos a que vaya analizando la red y aparezcan todos los equipos.</li>
+<li>A continuación creamos un grupo nuevo (pulsando en el símbolo <em>+</em> verde en la esquina inferior izquierda).</li>
+<li>Ahora iremos arrastrando -uno a uno- los clientes detectados al nuevo grupo.</li>
+</ul>
+<p>Cuando, por ejemplo, deseemos apagar los equipos podremos realizar esta opción desde el menú (a todo el grupo) y aparecerán con el siguiente icono:</p>
+<img alt="_images/epoptes-client-offline.png" class="align-center" src="_images/epoptes-client-offline.png" />
+</div>
+<div class="section" id="wake-on-lan">
+<h2>Wake On LAN<a class="headerlink" href="#wake-on-lan" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El soporte de <em>Encendido por Red</em> viene implementado en el ordenador. Los equipos portátiles más modernos con <em>wifi</em> también suelen soportarlo, aunque en estos casos se llama <em>Wake on Wireless LAN</em>. El único requerimiento para que funcione es que esté activado en la configuración de la BIOS de cada ordenador del aula.</p>
+<p>Para ver si la BIOS esta correctamente configurada, haga lo siguiente:</p>
+<ul class="simple">
+<li>Reinicie el equipo y entre a la BIOS presionando la tecla necesaria según corresponda (ESC, DEL, F2, F5, F11, F12)</li>
+<li>Una vez dentro de la BIOS, deberemos entrar a las opciones de alimentación (POWER) y activar la opción <em>Wake on LAN</em> o similar</li>
+</ul>
+<div class="admonition important">
+<p class="first admonition-title">Importante</p>
+<p class="last">Recuerde guardar los cambios en la BIOS antes de salir.</p>
+</div>
+<div class="figure align-left">
+<img alt="_images/wakeonlan1.png" src="_images/wakeonlan1.png" />
+<p class="caption">Ejemplo 1</p>
+</div>
+<div class="figure align-right">
+<img alt="_images/wakeonlan2.jpg" src="_images/wakeonlan2.jpg" />
+<p class="caption">Ejemplo 2</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="troubleshoot.html" title="Resolución de problemas"
+             >siguiente</a></li>
+        <li class="right" >
+          <a href="configure.html" title="Configuración de LliureX LTSP"
+             >anterior</a> |</li>
+        <li><a href="index.html">Guía Usuario LliureX LTSP</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es_ES">Licencia CC BY-NC-SA 3.0</a> 2013, Equipo LliureX.
+      Actualizado por última vez en 2013-12-12.
+    Creado con <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2. Tema por <a href="http://github.com/vkvn">vkvn</a>
+    </div>
+  </body>
+</html>

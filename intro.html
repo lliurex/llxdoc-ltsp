@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introducción a LliureX LTSP &mdash; Guía de Usuario de LliureX LTSP v 0.1</title>
+    
+    <link rel="stylesheet" href="_static/solar.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/translations.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="Guía de Usuario de LliureX LTSP v 0.1" href="index.html" />
+    <link rel="next" title="Configuración de LliureX LTSP" href="configure.html" />
+    <link rel="prev" title="Guía de usuario de LliureX LTSP" href="index.html" /><link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+<link href="_static/solarized-dark.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="configure.html" title="Configuración de LliureX LTSP"
+             accesskey="N">siguiente</a></li>
+        <li class="right" >
+          <a href="index.html" title="Guía de usuario de LliureX LTSP"
+             accesskey="P">anterior</a> |</li>
+        <li><a href="index.html">Guía Usuario LliureX LTSP</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/lliurex.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Tabla de Contenidos</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introducción a LliureX LTSP</a><ul>
+<li><a class="reference internal" href="#que-es-lliurex-ltsp">¿Qué es LliureX LTSP?</a></li>
+<li><a class="reference internal" href="#que-funcionalidad-ofrece-lliurex-ltsp">¿Qué funcionalidad ofrece LliureX LTSP?</a></li>
+<li><a class="reference internal" href="#requisitos-de-funcionamiento">Requisitos de funcionamiento</a></li>
+<li><a class="reference internal" href="#conceptos-basicos">Conceptos básicos</a></li>
+<li><a class="reference internal" href="#motivos-para-el-cambio-de-tcos-a-ltsp">Motivos para el cambio de TCOS a LTSP</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Tema anterior</h4>
+  <p class="topless"><a href="index.html"
+                        title="capítulo anterior">Guía de usuario de LliureX LTSP</a></p>
+  <h4>Próximo tema</h4>
+  <p class="topless"><a href="configure.html"
+                        title="próximo capítulo">Configuración de LliureX LTSP</a></p>
+  <h3>Esta página</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/intro.txt"
+           rel="nofollow">Mostrar el código</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Búsqueda rápida</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Ir a" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Introduzca los términos de búsqueda o un nombre de módulo, clase o función.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="introduccion-a-lliurex-ltsp">
+<h1>Introducción a LliureX LTSP<a class="headerlink" href="#introduccion-a-lliurex-ltsp" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="que-es-lliurex-ltsp">
+<h2>¿Qué es LliureX LTSP?<a class="headerlink" href="#que-es-lliurex-ltsp" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>LliureX LTSP es la adaptación del proyecto LTSP (<a class="reference external" href="http://ltsp.org">Linux Terminal Server Project</a>) para el soporte de clientes ligeros en el modelo de Aula/Centro LliureX.</p>
+<p>LTSP es un servidor de terminales libre y abierto para Linux que permite que varias personas utilicen el mismo ordenador. Las aplicaciones se ejecutan en el servidor con un terminal llamado cliente ligero. Generalmente los clientes ligeros tienen un consumo reducido de energía, no disponen de disco duro y son más silenciosos y fiables que los ordenadores normales (al no tener partes móviles).</p>
+<a class="reference internal image-reference" href="_images/thin-client.jpg"><img alt="_images/thin-client.jpg" src="_images/thin-client.jpg" style="height: 200px;" /></a>
+<p>De la misma manera, ordenadores que podrían llegar a ser obsoletos se pueden reciclar en clientes ligeros. Extendiendo la vida útil de estos ordenadores también se reducen costes.</p>
+<a class="reference internal image-reference" href="_images/pc.jpg"><img alt="_images/pc.jpg" src="_images/pc.jpg" style="height: 200px;" /></a>
+<p>Por último, el hecho de que todos los clientes ligeros arranquen la misma imagen reduce drásticamente el mantenimiento de la configuración. Por ejemplo, en lugar de actualizar todos los equipos, sólo actualizamos una imagen que se cargará en todos.</p>
+</div>
+<div class="section" id="que-funcionalidad-ofrece-lliurex-ltsp">
+<h2>¿Qué funcionalidad ofrece LliureX LTSP?<a class="headerlink" href="#que-funcionalidad-ofrece-lliurex-ltsp" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Un servidor LliureX (bien de Aula, bien de Centro o Independiente) debe disponer de una copia (<em>mirror</em>) del repositorio de paquetes de LliureX para su correcto mantenimiento. A partir de dicho repositorio local se pueden generar las imágenes de <em>cualquiera</em> de los sabores de LliureX. Igualmente se pueden actualizar y personalizar (instalar/eliminar programas, editar la configuración del escritorio, etc) dichas imágenes.</p>
+<p>Adicionalmente existe la posibilidad de configurar clientes &#8220;<em>semi-ligeros</em>&#8221; (también llamados &#8220;<em>fat clients</em>&#8221;, por contraste con &#8220;<em>thin client</em>&#8221;). Un cliente semi-ligero utiliza la misma imagen generada en el servidor pero con la diferencia de utilizar la CPU y la memoria RAM del equipo cliente. De esta manera, los equipos cliente que tengan la potencia suficiente podrán descargar de trabajo (uso de recursos) al servidor.</p>
+<p>Otra opción interesante es la posibilidad de realizar la instalación de equipos cliente (tradicionales) por red. Aunque esta funcionalidad no es propia de LTSP, se ha aprovechado la infraestructura necesaria para LTSP (repositorio local) y ofrecer la instalación por red vía la interfaz de gestión de LliureX LTSP. Dependiendo de la capacidad de la red del aula (o del centro) se podrán realizar más (o menos) instalaciones simultáneas de clientes. Esta utilidad ayuda a reducir el tiempo de instalación total.</p>
+</div>
+<div class="section" id="requisitos-de-funcionamiento">
+<h2>Requisitos de funcionamiento<a class="headerlink" href="#requisitos-de-funcionamiento" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Según la documentación del proyecto LTSP y de Ubuntu, los requisitos mínimos en el servidor son:</p>
+<ul class="simple">
+<li>Core 2 Duo o Core 2 Quad (también funciona con CPUs más simples pero con menor rendimiento).</li>
+<li>4 GB (20 clientes); recomendable 8 GB (depende de la demanda de los usuarios).</li>
+<li>1 tarjeta de red a Gigabit (mínimo).</li>
+</ul>
+<p>En el cliente:</p>
+<ul class="simple">
+<li>Pentium Pro o superior.</li>
+<li>128 MB de RAM.</li>
+<li>Tarjeta de red Fast Ethernet con soporte PXE.</li>
+</ul>
+</div>
+<div class="section" id="conceptos-basicos">
+<h2>Conceptos básicos<a class="headerlink" href="#conceptos-basicos" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Los conceptos principales a tener en cuenta son:</p>
+<dl class="docutils">
+<dt>Directorio <em>chroot</em></dt>
+<dd>Directorio con el contenido <em>completo</em> de un <em>sabor</em> de LliureX. Este directorio se construye a partir del repositorio de paquetes local del servidor. En él se pueden instalar/desinstalar aplicaciones, realizar actualizaciones, etc. A partir de los contenidos de este directorio se generará el archivo <em>imagen</em> correspondiente. Este es un proceso costoso y suele tardar alrededor de 2 horas. No obstante no es una operación a realizar con frecuencia puesto que, una vez generado, el mantenimiento este directorio es mucho más ligero (las operaciones de instalar/desinstalar y actualizar son más cortas).</dd>
+<dt>Archivo <em>imagen</em> (<em>.img</em>)</dt>
+<dd>Fichero <em>imagen</em> generado a partir de un directorio <em>chroot</em> concreto. Este fichero imagen será enviado por red al equipo cliente (tanto ligero como semi-ligero). El proceso de    generación suele tardar alrededor de unos 15 minutos.</dd>
+<dt>Cliente ligero</dt>
+<dd>Como ya se ha explicado antes, se trata de un equipo de bajas prestaciones pero suficiente para poder mostrar la imagen de la sesión en el servidor en la pantalla. Tanto los procesos de cálculo como el almacenamiento en memoria se producen en el servidor. Es barato (fácil de reemplazar) y también reduce el tiempo de administración (todos los clientes ligeros tienen -o suelen tener por defecto- la misma imagen o configuración).</dd>
+<dt>Cliente semi-ligero (<em>fat-thinclient</em>)</dt>
+<dd>Por contra, un cliente semiligero necesita un poco más de recursos dado que el procesamiento y la memoria son locales (pero sigue sin necesitar disco duro). Utiliza menos recursos del servidor (permitiendo más clientes para el mismo <em>hardware</em> si lo comparamos con los clientes ligeros normales).</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Un <em>chroot</em> es básicamente un directorio especial de tu ordenador que evita que las aplicaciones puedan acceder a ficheros de fuera de ese directorio. En muchos sentidos, un <em>chroot</em> es como instalar un sistema operativo dentro del sistema operativo existente. Más información en: <a class="reference external" href="http://help.ubuntu.com/community/BasicChroot">http://help.ubuntu.com/community/BasicChroot</a></p>
+</div>
+</div>
+<div class="section" id="motivos-para-el-cambio-de-tcos-a-ltsp">
+<h2>Motivos para el cambio de TCOS a LTSP<a class="headerlink" href="#motivos-para-el-cambio-de-tcos-a-ltsp" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>LliureX LTSP se introduce en la versión 13.06 (Pandora) motivado por varias razones:</p>
+<ul class="simple">
+<li>Mayor comunidad de usuarios y desarrolladores (con todo lo que ello implica).</li>
+<li>Gestión más flexible en la generación de imágenes de los clientes.</li>
+<li>Mejor rendimiento (de NBD comparado con NFS).</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="configure.html" title="Configuración de LliureX LTSP"
+             >siguiente</a></li>
+        <li class="right" >
+          <a href="index.html" title="Guía de usuario de LliureX LTSP"
+             >anterior</a> |</li>
+        <li><a href="index.html">Guía Usuario LliureX LTSP</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es_ES">Licencia CC BY-NC-SA 3.0</a> 2013, Equipo LliureX.
+      Actualizado por última vez en 2013-12-12.
+    Creado con <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2. Tema por <a href="http://github.com/vkvn">vkvn</a>
+    </div>
+  </body>
+</html>
