@@ -1,7 +1,7 @@
 Guía de usuario de LliureX LTSP
 ===============================
 
-.. warning:: Versión en desarrollo. Última actualización (ver pie de página).
+.. warning:: Versión en desarrollo. Última actualización: |today|
 
 Contenidos:
 
