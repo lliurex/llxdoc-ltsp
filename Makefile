@@ -37,6 +37,7 @@ help:
 	@echo "  changes    to make an overview of all changed/added/deprecated items"
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
+	@echo "  github     to build html target and commit to github apropriate branch"
 
 clean:
 	-rm -rf $(BUILDDIR)/*
@@ -153,5 +154,5 @@ doctest:
 	      "results in $(BUILDDIR)/doctest/output.txt."
 
 github: html
-	ghp-import -n -m "Synced to html build" -p $(BUILDDIR)/html
+	ghp-import -n -m "Synced to html build" $(BUILDDIR)/html
 	git push --all
