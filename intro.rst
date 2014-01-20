@@ -57,7 +57,7 @@ Cliente ligero
     Como ya se ha explicado antes, se trata de un equipo de bajas prestaciones pero suficiente para poder mostrar la imagen de la sesión en el servidor en la pantalla. Tanto los procesos de cálculo como el almacenamiento en memoria se producen en el servidor. Es barato (fácil de reemplazar) y también reduce el tiempo de administración (todos los clientes ligeros tienen -o suelen tener por defecto- la misma imagen o configuración). No dispone de disco duro y por lo tanto no se puede instalar LliureX en él.
 
 Cliente semi-ligero (*fat-thinclient*)
-    Por contra, un cliente semiligero necesita un poco más de recursos dado que el procesamiento y la memoria son locales (pero sigue sin necesitar disco duro). Utiliza menos recursos del servidor (podrá gestionar más clientes para el mismo *hardware* si lo comparamos con los clientes ligeros normales).
+    Por contra, un cliente semiligero necesita un poco más de recursos dado que el procesamiento y la memoria son locales (pero sigue sin necesitar disco duro). Utiliza menos recursos del servidor (podrá gestionar más clientes para el mismo *hardware* si lo comparamos con los clientes ligeros normales). Además, puede hacer funcionar *hardware* que siendo sólo ligero resulta imposible. La desventaja es un mayor tiempo de carga y, por lo tanto, de tráfico en la red local. En conclusión: sólo es recomendable en aquellos casos en los que haya que conectar *hardware* que no funcione en los clientes ligeros o en los que el servidor tenga poca RAM, el procesador sea antiguo y los clientes tengan suficiente capacidad para ejecutar la imagen.
 
 .. note::
 
